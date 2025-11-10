@@ -56,26 +56,11 @@
       border-radius: 30px;
       display: grid;
       transition: transform 0.3s ease;
-      position: relative;
+      position: absolute;
     }
 
     .gallery img:hover {
       transform: scale(1.03);
-    }
-
-    @media (width: device-width) {
-      .gallery {
-        column-count: 3;
-        position: relative;
-      }
-    }
-
-    @media (width: device-width) {
-      .gallery {
-        column-count: 3;
-        padding: 20px;
-        position: relative;
-      }
     }
 
     /* --- Tutorials Section --- */
@@ -135,7 +120,7 @@
 
   <!-- IMAGE GALLERY -->
   <section class="gallery">
-  <h2 class="tutorials-heading">What Masterpieces You Can Create</h2>
+    <h2>Masterpieces</h2>
     <img src="images/image18.jpg" alt="Yarn Display">
     <img src="images/image19.jpg" alt="Crafts">
     <img src="images/image20.jpg" alt="Knitted Scarf">
