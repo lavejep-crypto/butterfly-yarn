@@ -30,7 +30,7 @@
     }
 
     nav a {
-      margin-left: 25px;
+      position: relative;
       text-decoration: none;
       color: #ffffff;
       font-weight: 500;
@@ -50,9 +50,12 @@
 
     .gallery img {
       width: 100%;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      display: block;
+      height: auto;
+      gap: 15px;
+      padding: 5px 10px;
+      border-radius: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       transition: transform 0.3s ease;
     }
 
@@ -60,15 +63,15 @@
       transform: scale(1.03);
     }
 
-    @media (max-width: 900px) {
+    @media (width: auto-fit) {
       .gallery {
-        column-count: 2;
+        column-count: 3;
       }
     }
 
-    @media (max-width: 600px) {
+    @media (width: auto-fit) {
       .gallery {
-        column-count: 1;
+        column-count: 3;
         padding: 20px;
       }
     }
@@ -98,6 +101,8 @@
       height: 203px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: grid;
+      column-count: 2s;
     }
 
     footer {
