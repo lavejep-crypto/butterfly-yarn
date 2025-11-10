@@ -91,18 +91,15 @@ nav a:hover {
 
 .hero-content h2 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 5.5rem;
+  font-size: 4rem;
   color: #222;
-  margin-bottom: 20px;
   position: relative;
 }
 
 .hero-content p {
   color: #ffffff;
   font-size: 1.1rem;
-  margin-bottom: 25px;
-  margin-right: 900px;
-  position:absolute;
+  position:relative;
 }
 
 .hero-image {
