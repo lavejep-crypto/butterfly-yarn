@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butterfly Yarn & Crafts</title>
+
+  <!-- External Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Internal Styles -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      position: relative;
+    }
+    .background-wrapper {
+      background-image: url('images/image1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      width: 100%;
+      position: relative;
+      z-index: 0;
+    }
+    #backgroundCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+      background: transparent;
+    }
+    header, section, footer {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-wrapper">
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <img src="images/black logo.png" alt="Butterfly Yarn Logo">
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="tutorials.html">Tutorials</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+  <div class="hero-content">
+    <h2>Creativity Meets Yarn</h2>
+    <p>Discover the finest yarns and craft supplies to bring your imagination to life.</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </div>
+</section>
+
+    <!-- INTRO -->
+    <section id="intro">
+  <div class="hero">
+      <h2>About Our Store</h2>
+      <p>At Butterfly Yarn & Crafts, we believe in quality, creativity, and sustainability. Our products are crafted for those who value detail and artistry in every stitch.</p>
+  </div>    
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Butterfly Yarn & Crafts | All Rights Reserved</p>
+    </footer>
+  </div>
+</body>
+</html>

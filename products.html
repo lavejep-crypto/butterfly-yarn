@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Butterfly Yarn | Products</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/black logo.png" alt="Butterfly Logo" class="logo">
+      <div>
+        <h1>Butterfly Yarn & Crafts</h1>
+        <p class="tag">Creativity meets yarn</p>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <button class="cart-btn" id="openCartBtn" aria-label="Open cart">
+      <i class="fas fa-shopping-bag"></i>
+      <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main class="container">
+    <section class="products">
+      <h2>Our Featured Products</h2>
+      <p class="lead">Handpicked yarns and craft sets — premium feel, crafted for makers.</p>
+
+      <div id="productGrid" class="product-grid">
+        <!-- Product cards (16). Update image paths and prices as needed -->
+        <!-- Template for each card: data-name, data-price (integer), data-sku optional -->
+        <article class="product-card" data-name="Butterfly Yarn – Cotton Soft" data-price="500">
+          <img src="images/image4.jpg" alt="Butterfly Yarn – Cotton Soft">
+          <div class="product-body">
+            <h3>Butterfly Yarn – Cotton Soft</h3>
+            <p class="desc">Perfect for knitting and crochet. Premium fiber blend.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>500</span></div>
+              <div class="actions">
+              <button class="btn add" aria-label="Add to cart">Add to Cart</button> 
+                <button class="btn outline buy" aria-label="Buy now">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Butterfly Yarn – Deluxe Silk" data-price="750">
+          <img src="images/image5.jpg" alt="Butterfly Yarn – Deluxe Silk">
+          <div class="product-body">
+            <h3>Butterfly Yarn – Deluxe Silk</h3>
+            <p class="desc">Elegant silky texture for luxury projects. Limited edition colors.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>750</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Repeat for the remaining 14 products (I kept names generic; update as you want) -->
+        <article class="product-card" data-name="Colorful Crochet Set" data-price="1200">
+          <img src="images/image6.jpg" alt="Colorful Crochet Set">
+          <div class="product-body">
+            <h3>Colorful Crochet Set</h3>
+            <p class="desc">Multiple colors, perfect starter kit for crochet lovers.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>1200</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Wool Blend Yarn - Charcoal" data-price="650">
+          <img src="images/image7.jpg" alt="Wool Blend Yarn - Charcoal">
+          <div class="product-body">
+            <h3>Wool Blend Yarn - Charcoal</h3>
+            <p class="desc">Warm and soft — great for winter projects.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>650</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Pastel Yarn Pack" data-price="900">
+          <img src="images/image8.jpg" alt="Pastel Yarn Pack">
+          <div class="product-body">
+            <h3>Pastel Yarn Pack</h3>
+            <p class="desc">Set of 5 pastel tones for delicate projects.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>900</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Sparkle Thread Set" data-price="950">
+          <img src="images/image9.jpg" alt="Sparkle Thread Set">
+          <div class="product-body">
+            <h3>Sparkle Thread Set</h3>
+            <p class="desc">Add shimmer to your crafts — metallic finish.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>950</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Hand-dyed Yarn - Ocean" data-price="1400">
+          <img src="images/image10.jpg" alt="Hand-dyed Yarn - Ocean">
+          <div class="product-body">
+            <h3>Hand-dyed Yarn - Ocean</h3>
+            <p class="desc">Unique colorway, small-batch hand-dyed skeins.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>1400</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Chunky Knit Yarn" data-price="1100">
+          <img src="images/image11.jpg" alt="Chunky Knit Yarn">
+          <div class="product-body">
+            <h3>Chunky Knit Yarn</h3>
+            <p class="desc">Bulky yarn for quick, cozy projects.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>1100</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Merino Luxury Skein" data-price="2200">
+          <img src="images/image12.jpg" alt="Merino Luxury Skein">
+          <div class="product-body">
+            <h3>Merino Luxury Skein</h3>
+            <p class="desc">Superfine merino. Soft, warm, and elegant.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>2200</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Kit: Beginner Knitting" data-price="1500">
+          <img src="images/image13.jpg" alt="Kit: Beginner Knitting">
+          <div class="product-body">
+            <h3>Kit: Beginner Knitting</h3>
+            <p class="desc">Needles, yarn, and a printed beginner guide.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>1500</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Eco Yarn Roll" data-price="430">
+          <img src="images/image14.jpg" alt="Eco Yarn Roll">
+          <div class="product-body">
+            <h3>Eco Yarn Roll</h3>
+            <p class="desc">Affordable, recycled fiber yarn roll.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>430</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Mini Amigurumi Set" data-price="880">
+          <img src="images/image15.jpg" alt="Mini Amigurumi Set">
+          <div class="product-body">
+            <h3>Mini Amigurumi Set</h3>
+            <p class="desc">All you need to make small soft toys.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>880</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Embroidery Thread Pack" data-price="320">
+          <img src="images/image16.jpg" alt="Embroidery Thread Pack">
+          <div class="product-body">
+            <h3>Embroidery Thread Pack</h3>
+            <p class="desc">Bright color threads for delicate detailing.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>320</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Needle & Hook Set" data-price="420">
+          <img src="images/image17.jpg" alt="Needle & Hook Set">
+          <div class="product-body">
+            <h3>Needle & Hook Set</h3>
+            <p class="desc">Essential needles and hooks for all yarn types.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>420</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Gift Box - Assorted" data-price="1800">
+          <img src="images/image2.webp" alt="Gift Box - Assorted">
+          <div class="product-body">
+            <h3>Gift Box - Assorted</h3>
+            <p class="desc">Ready-made gift boxes for special occasions.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>1800</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Limited Edition Skein" data-price="2000">
+          <img src="images/image3.webp" alt="Limited Edition Skein">
+          <div class="product-body">
+            <h3>Limited Edition Skein</h3>
+            <p class="desc">Special release — collectable colorways.</p>
+            <div class="meta">
+              <div class="price">Ksh <span>2000</span></div>
+              <div class="actions">
+                <button class="btn add">Add to Cart</button>
+                <button class="btn outline buy">Buy</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- CART DRAWER -->
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <header class="drawer-header">
+      <h3>Your Cart</h3>
+      <button id="closeCartBtn" class="close-drawer" aria-label="Close cart">
+  <i class="fas fa-times"></i> Close cart
+</button>
+    </header>
+
+    <div class="drawer-body" id="cartItemsWrap">
+      <!-- Items inserted dynamically -->
+      <p class="empty-note" id="emptyNote">Your cart is empty. Add something nice ✨</p>
+    </div>
+
+    <footer class="drawer-footer">
+      <div class="totals">
+        <div>Subtotal</div>
+        <div>Ksh <span id="subtotal">0</span></div>
+      </div>
+      <div class="totals small">
+        <div>Shipping</div>
+        <div>Ksh <span id="shipping">0</span></div>
+      </div>
+      <div class="totals big">
+        <div>Total</div>
+        <div>Ksh <span id="total">0</span></div>
+      </div>
+
+      <button id="checkoutBtn" class="btn checkout">Checkout with WhatsApp</button>
+      <button id="clearCartBtn" class="btn outline small">Clear Cart</button>
+    </footer>
+  </aside>
+
+  <div class="backdrop" id="drawerBackdrop" hidden></div>
+
+  <footer class="site-footer">
+    <p>© 2025 Butterfly Yarn | All Rights Reserved</p>
+  </footer>
+
+  <!-- Script: cart logic -->
+  <script>
+    // ===== CONFIG =====
+    const WHATSAPP_NUMBER = "254742443735"; // <-- YOUR WHATSAPP NUMBER (no +, country code included)
+    const SHIPPING_FEE = 0; // Set shipping rule here (0 for free during prototype)
+
+    // ===== UTILITIES =====
+    function qs(sel) { return document.querySelector(sel); }
+    function qsa(sel) { return Array.from(document.querySelectorAll(sel)); }
+    function safeInt(n) { return Number.parseInt(n, 10) || 0; } // explicit integer parsing
+
+    // ===== STATE =====
+    let cart = JSON.parse(localStorage.getItem('butterfly_cart') || '[]');
+
+    // ===== UI ELEMENTS =====
+    const cartCountEl = qs('#cartCount');
+    const subtotalEl = qs('#subtotal');
+    const totalEl = qs('#total');
+    const shippingEl = qs('#shipping');
+    const cartItemsWrap = qs('#cartItemsWrap');
+    const emptyNote = qs('#emptyNote');
+    const checkoutBtn = qs('#checkoutBtn');
+    const clearCartBtn = qs('#clearCartBtn');
+    const openCartBtn = qs('#openCartBtn');
+    const closeCartBtn = qs('#closeCartBtn');
+    const cartDrawer = qs('#cartDrawer');
+    const backdrop = qs('#drawerBackdrop');
+
+    // ===== INIT =====
+    function init() {
+      // attach handlers to product cards
+      qsa('.product-card').forEach(card => {
+        const addBtn = card.querySelector('.btn.add');
+        const buyBtn = card.querySelector('.btn.buy');
+        const name = card.dataset.name;
+        const price = safeInt(card.dataset.price);
+
+        addBtn.addEventListener('click', () => {
+          addToCart({ name, price, qty: 1 });
+          flashAdd(addBtn);
+        });
+
+        buyBtn.addEventListener('click', () => {
+          // immediate buy: open whatsapp with single item
+          const message = encodeURIComponent(`ORDER *Butterfly Yarn & Crafts* 
+          Product: ${name} 
+          Price: Ksh ${price} 
+          Please confirm and provide delivery details.`);
+          window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+        });
+      });
+
+      openCartBtn.addEventListener('click', showCart);
+      closeCartBtn.addEventListener('click', hideCart);
+      backdrop.addEventListener('click', hideCart);
+      checkoutBtn.addEventListener('click', handleCheckout);
+      clearCartBtn.addEventListener('click', clearCart);
+
+      renderCart();
+    }
+
+    // ===== CART OPERATIONS =====
+    function saveCart() {
+      localStorage.setItem('butterfly_cart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    function addToCart(item) {
+      // try to find existing
+      const idx = cart.findIndex(ci => ci.name === item.name);
+      if (idx > -1) {
+        cart[idx].qty = safeInt(cart[idx].qty) + safeInt(item.qty);
+      } else {
+        cart.push({ name: item.name, price: safeInt(item.price), qty: safeInt(item.qty) });
+      }
+      saveCart();
+      animateCartCount();
+    }
+
+    function updateQty(index, qty) {
+      qty = safeInt(qty);
+      if (qty <= 0) {
+        cart.splice(index, 1);
+      } else {
+        cart[index].qty = qty;
+      }
+      saveCart();
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      saveCart();
+    }
+
+    function clearCart() {
+      if (!confirm('Clear all items from cart?')) return;
+      cart = [];
+      saveCart();
+    }
+
+    // ===== RENDER =====
+    function renderCart() {
+      // cart count
+      cartCountEl.textContent = cart.reduce((sum, it) => sum + safeInt(it.qty), 0);
+
+      // cart items container
+      cartItemsWrap.innerHTML = '';
+      if (cart.length === 0) {
+        emptyNote.hidden = false;
+      } else {
+        emptyNote.hidden = true;
+        cart.forEach((it, i) => {
+          const itemWrap = document.createElement('div');
+          itemWrap.className = 'cart-item';
+          itemWrap.innerHTML = `
+            <div class="ci-left">
+              <div class="ci-name">${escapeHtml(it.name)}</div>
+              <div class="ci-price">Ksh ${formatNumber(it.price)}</div>
+            </div>
+            <div class="ci-right">
+              <div class="qty-controls">
+                <button class="qty-btn dec" data-i="${i}">-</button>
+                <input type="number" min="1" class="qty-input" data-i="${i}" value="${safeInt(it.qty)}">
+                <button class="qty-btn inc" data-i="${i}">+</button>
+              </div>
+              <button class="remove" data-i="${i}" aria-label="Remove item"><i class="fas fa-trash"></i></button>
+            </div>
+          `;
+          cartItemsWrap.appendChild(itemWrap);
+        });
+
+        // attach qty / remove handlers
+        qsa('.qty-btn.inc').forEach(b => b.addEventListener('click', (e) => {
+          const i = safeInt(e.currentTarget.dataset.i);
+          updateQty(i, safeInt(cart[i].qty) + 1);
+        }));
+        qsa('.qty-btn.dec').forEach(b => b.addEventListener('click', (e) => {
+          const i = safeInt(e.currentTarget.dataset.i);
+          updateQty(i, safeInt(cart[i].qty) - 1);
+        }));
+        qsa('.qty-input').forEach(inp => {
+          inp.addEventListener('change', (e) => {
+            const i = safeInt(e.currentTarget.dataset.i);
+            const val = Math.max(1, safeInt(e.currentTarget.value));
+            updateQty(i, val);
+          });
+        });
+        qsa('.remove').forEach(btn => btn.addEventListener('click', (e) => {
+          const i = safeInt(e.currentTarget.dataset.i);
+          if (confirm('Remove this item?')) removeItem(i);
+        }));
+      }
+
+      // totals
+      const subtotal = cart.reduce((sum, it) => sum + (safeInt(it.price) * safeInt(it.qty)), 0);
+      subtotalEl.textContent = formatNumber(subtotal);
+      shippingEl.textContent = formatNumber(SHIPPING_FEE);
+      totalEl.textContent = formatNumber(subtotal + safeInt(SHIPPING_FEE));
+    }
+
+    // ===== CHECKOUT =====
+    function handleCheckout() {
+      if (cart.length === 0) return alert('Your cart is empty.');
+      // Build message carefully (all arithmetic done above)
+      let total = 0;
+      let message = '🦋 *Butterfly Yarn & Crafts Order* 🧶%0A%0A';
+      cart.forEach(it => {
+        message += `• ${encodeURIComponent(it.name)} - Ksh ${encodeURIComponent(it.price)} x ${encodeURIComponent(it.qty)}%0A`;
+        total += safeInt(it.price) * safeInt(it.qty);
+      });
+      message += `%0ASubtotal: Ksh ${encodeURIComponent(total)}%0AShipping: Ksh ${encodeURIComponent(SHIPPING_FEE)}%0ATotal: Ksh ${encodeURIComponent(total + safeInt(SHIPPING_FEE))}%0A%0APlease confirm and provide delivery details (name, address).`;
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+      window.open(url, '_blank');
+    }
+
+    // ===== UI HELPERS =====
+    function showCart() {
+      cartDrawer.setAttribute('aria-hidden', 'false');
+      cartDrawer.classList.add('open');
+      backdrop.hidden = false;
+      document.body.style.overflow = 'hidden';
+    }
+    function hideCart() {
+      cartDrawer.setAttribute('aria-hidden', 'true');
+      cartDrawer.classList.remove('open');
+      backdrop.hidden = true;
+      document.body.style.overflow = '';
+    }
+
+    function animateCartCount() {
+      cartCountEl.classList.add('pulse');
+      setTimeout(() => cartCountEl.classList.remove('pulse'), 400);
+    }
+
+    function flashAdd(btn) {
+      btn.textContent = 'Added';
+      btn.disabled = true;
+      setTimeout(() => { btn.textContent = 'Add to Cart'; btn.disabled = false; }, 900);
+    }
+
+    function formatNumber(n) {
+      return new Intl.NumberFormat('en-KE').format(safeInt(n));
+    }
+
+    function escapeHtml(unsafe) {
+      return String(unsafe).replace(/[&<"']/g, function (m) {
+        return ({ '&': '&amp;', '<': '&lt;', '"': '&quot;', "'": '&#039;' })[m];
+      });
+    }
+
+    // initialize on DOM ready
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

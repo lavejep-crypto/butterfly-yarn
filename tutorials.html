@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorials | Butterfly Yarn & Crafts</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d1d1d1;
+    }
+
+    /* --- Masonry Image Gallery --- */
+    .gallery {
+      column-count: 3;
+      column-gap: 15px;
+      padding: 40px 60px;
+    }
+
+    .gallery img {
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        column-count: 1;
+        padding: 20px;
+      }
+    }
+
+    /* --- Tutorials Section --- */
+    .tutorials {
+      text-align: center;
+      padding: 60px 20px;
+      background: white;
+    }
+
+    .tutorials h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .videos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .videos iframe {
+      width: 360px;
+      height: 203px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: #fff;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="images/black logo.png" alt="Butterfly Yarn Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="tutorials.html">Tutorials</a>
+      <div class="tutorials-grid">
+    </nav>
+  </header>
+
+  <!-- IMAGE GALLERY -->
+  <section class="gallery">
+  <h2 class="tutorials-heading">What Masterpieces You Can Create</h2>
+    <img src="images/image18.jpg" alt="Yarn Display">
+    <img src="images/image19.jpg" alt="Crafts">
+    <img src="images/image20.jpg" alt="Knitted Scarf">
+    <img src="images/image21.jpg" alt="Yarn Shelves">
+    <img src="images/image22.jpg" alt="Handmade Item">
+     <img src="images/image24.jpg" alt="Thread Work">
+      <img src="images/image25.jpg" alt="Thread Work">
+       <img src="images/image26.jpg" alt="Thread Work">
+        <img src="images/image27.jpg" alt="Thread Work">
+         <img src="images/image28.jpg" alt="Thread Work">
+    
+  </section>
+
+  <!-- VIDEO TUTORIALS -->
+  <section class="tutorials">
+    <h2>Watch some tutorials</h2>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/IVXEIHGzow4?si=9kBb7GG1nT9Pwvym" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/JfX7kok5HyY?si=J59xzBzy2fFAUpWm" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/ufCgyVbmWkI?si=z8mLUf_qNcrtDXdh" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/IWxEi_kozx8?si=RVOAul4Nol9XLzAi" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/2O_Wntlixsw?si=19RYuk0gTsOdoG_C" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/zIftudXrbbc?si=5-p5VXYyt-DjTLz6" frameborder="0" allowfullscreen></iframe>
+      <div class="more-videos">
+    <h3>For more videos, visit YouTube:</h3>
+    <a href="https://www.youtube.com" target="_blank" class="youtube-link">
+      youtube.com
+    </a>
+  </div>
+</section>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Butterfly Yarn & Crafts | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
