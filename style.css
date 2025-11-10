@@ -255,11 +255,11 @@ button i {
   text-align: center;
   font-size: 2.5rem;
   color: #000;
-  margin-top: 60px;
-  margin-bottom: 40px;
   font-family: 'Times New Roman', Times, serif;
   position: relative;
 }
+
+.tutorials-heading h2{font-size: 2rem;position: relative;}
 
 .more-videos {
   text-align: center;
@@ -368,7 +368,7 @@ button{font-family:inherit}
 /* ---- Product grid ---- */
 .product-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+  
   gap:var(--gap);
 }
 .product-card{
