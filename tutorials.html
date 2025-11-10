@@ -45,7 +45,7 @@
     .gallery {
       column-count: 3;
       column-gap: 15px;
-      padding: 40px 60px;
+      padding: 5px 10px;
     }
 
     .gallery img {
@@ -56,6 +56,7 @@
       border-radius: 30px;
       display: grid;
       transition: transform 0.3s ease;
+      position: relative;
     }
 
     .gallery img:hover {
@@ -65,6 +66,7 @@
     @media (width: auto-fit) {
       .gallery {
         column-count: 3;
+        position: relative;
       }
     }
 
@@ -72,6 +74,7 @@
       .gallery {
         column-count: 3;
         padding: 20px;
+        position: relative;
       }
     }
 
