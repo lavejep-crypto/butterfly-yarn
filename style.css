@@ -259,7 +259,8 @@ button i {
   position: relative;
 }
 
-.tutorials-heading h2{font-size: 2rem;position: relative;}
+.tutorials-heading h2{
+  font-size: 2rem;position: absolute;}
 
 .more-videos {
   text-align: center;
