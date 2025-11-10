@@ -94,7 +94,7 @@ nav a:hover {
   font-size: 5.5rem;
   color: #222;
   margin-bottom: 20px;
-  width: 1000px;
+  position: relative;
 }
 
 .hero-content p {
@@ -102,7 +102,7 @@ nav a:hover {
   font-size: 1.1rem;
   margin-bottom: 25px;
   margin-right: 900px;
-  width: 1000px;
+  position:absolute;
 }
 
 .hero-image {
@@ -121,7 +121,7 @@ nav a:hover {
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
-  position: absolute;
+  position: relative;
 }
 
 .btn:hover {
